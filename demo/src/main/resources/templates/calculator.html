@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Calculator</title>
+  <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<div class="main-container">
+  <div class="calculator-container">
+    <div class="calculator">
+      <div class="display">
+        <input type="text" id="result" placeholder="0" readonly>
+      </div>
+      <div class="buttons">
+        <button type="button" class="operator" data-value="clear">C</button>
+        <button type="button" class="operator" data-value="del">DEL</button>
+        <button type="button" class="operator" data-operation="mod">%</button>
+        <button type="button" class="operator" data-operation="div">/</button>
+
+        <button type="button" data-value="7">7</button>
+        <button type="button" data-value="8">8</button>
+        <button type="button" data-value="9">9</button>
+        <button type="button" class="operator" data-operation="mul">*</button>
+
+        <button type="button" data-value="4">4</button>
+        <button type="button" data-value="5">5</button>
+        <button type="button" data-value="6">6</button>
+        <button type="button" class="operator" data-operation="sub">-</button>
+
+        <button type="button" data-value="1">1</button>
+        <button type="button" data-value="2">2</button>
+        <button type="button" data-value="3">3</button>
+        <button type="button" class="operator" data-operation="add">+</button>
+
+        <button type="button" data-value="0">0</button>
+        <button type="button" data-value=".">.</button>
+        <button type="button" id="equals" class="operator equals">=</button>
+      </div>
+      <div id="error-message" class="error-message"></div>
+    </div>
+  </div>
+  <div class="history-container">
+    <h3>History</h3>
+    <ul id="history-list" class="history-list">
+      <li th:each="entry : ${history}" th:text="${entry}"></li>
+    </ul>
+  </div>
+</div>
+<script th:src="@{/js/script.js}"></script>
+</body>
+</html>
