@@ -1,7 +1,7 @@
-Spring Boot Calculator App 🧮
+<h1>Spring Boot Calculator App 🧮</h1>
 This is a modern web-based calculator application built with Spring Boot for the back-end logic and HTML, CSS, and JavaScript for a responsive and interactive front-end. It features a sleek glassmorphism design and provides real-time calculation results without page reloads.
 
-✨ Features
+<h1>✨ Features</h1>
 Basic Arithmetic Operations: Perform addition, subtraction, multiplication, division, and modulus.
 
 Responsive UI: A clean and modern user interface with a glassmorphism design that adapts to different screen sizes.
@@ -14,7 +14,7 @@ Robust Error Handling: Provides user-friendly error messages for invalid operati
 
 Clean Separation of Concerns: Clearly separates front-end presentation from back-end business logic using a RESTful API approach.
 
-🛠️ Technologies Used
+<h1>🛠️ Technologies Used</h1>
 Backend:
 
 Java ☕
@@ -31,7 +31,7 @@ CSS3 (with custom styles for glassmorphism)
 
 JavaScript (ES6+) for interactive logic and AJAX calls
 
-📂 Project Structure
+<h1>📂 Project Structure</h1>
 .
 └── src
     └── main
@@ -53,7 +53,7 @@ JavaScript (ES6+) for interactive logic and AJAX calls
             │   └── calculator.html                 // Thymeleaf template for the main calculator UI
             └── application.properties              // Spring Boot application configuration
 
-🚀 Getting Started
+<h1>🚀 Getting Started</h1>
 Follow these instructions to get a copy of the project up and running on your local machine.
 
 Prerequisites
@@ -94,7 +94,7 @@ mvn spring-boot:run
 
 The application will start on http://localhost:8080 (or the port specified in application.properties).
 
-💡 Usage
+<h1>💡 Usage</h1>
 Open your web browser and navigate to http://localhost:8080.
 
 Input Numbers: Click on the number buttons (0-9) and the decimal point (.) to enter the first number.
@@ -111,7 +111,7 @@ Delete: Use the DEL button to remove the last digit from the current input.
 
 History: Your last few calculations will appear in the "History" section on the right.
 
-📈 Improvements & Future Enhancements
+<h1>📈 Improvements & Future Enhancements</h1>
 Advanced Operations: Add support for more complex mathematical functions (e.g., square root, powers, trigonometric functions, logarithms).
 
 Keyboard Support: Implement full keyboard support for input, operators, and actions.
@@ -127,11 +127,5 @@ User Interface Enhancements: Implement features like:
 Scrolling for long expressions in the display.
 
 Animations for button presses.
-
-Copying results to clipboard.
-
-Backend Scaling: For a production-level application, consider containerization (Docker) and deployment to cloud platforms (AWS, GCP, Azure).
-
-Accessibility: Ensure the calculator is accessible to users with disabilities (e.g., proper ARIA attributes, keyboard navigation).
 
 <img width="1303" height="863" alt="image" src="https://github.com/user-attachments/assets/9ae9a322-db1a-4f99-a2ab-6605f96384b5" />
