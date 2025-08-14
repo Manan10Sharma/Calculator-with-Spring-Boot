@@ -32,26 +32,29 @@ CSS3 (with custom styles for glassmorphism)
 JavaScript (ES6+) for interactive logic and AJAX calls
 
 <h1>📂 Project Structure</h1>
-.
-└── src
-    └── main
-        ├── java
-        │   └── com
-        │       └── example
-        │           └── demo
-        │               ├── CalculatorAppApplication.java   // Main Spring Boot application entry point
-        │               ├── CalculatorController.java       // Handles web requests and API endpoints
-        │               ├── CalculatorService.java          // Contains core calculation logic
-        │               └── CalculationResult.java          // DTO for API responses
-        └── resources
-            ├── static
-            │   ├── css
-            │   │   └── style.css                   // Styling for the calculator and layout
-            │   └── js
-            │       └── script.js                   // Frontend logic (AJAX, UI updates)
-            ├── templates
-            │   └── calculator.html                 // Thymeleaf template for the main calculator UI
-            └── application.properties              // Spring Boot application configuration
+
+├── src
+│   ├── main
+│   │   ├── java
+│   │   │   └── com
+│   │   │       └── example
+│   │   │           └── demo
+│   │   │               ├── CalculatorAppApplication.java  # Main application entry point
+│   │   │               ├── CalculatorController.java      # REST API and Thymeleaf controller
+│   │   │               ├── CalculatorService.java         # Business logic for calculations
+│   │   │               └── CalculationResult.java         # DTO for API responses
+│   │   └── resources
+│   │       ├── static
+│   │       │   ├── css
+│   │       │   │   └── style.css                          # CSS for styling
+│   │       │   └── js
+│   │       │       └── script.js                          # Front-end JavaScript logic (AJAX)
+│   │       ├── templates
+│   │       │   └── calculator.html                        # Thymeleaf template for the UI
+│   │       └── application.properties                     # Spring Boot configuration
+│   └── test
+└── pom.xml                                              # Maven dependencies and build config
+
 
 <h1>🚀 Getting Started</h1>
 Follow these instructions to get a copy of the project up and running on your local machine.
